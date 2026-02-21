@@ -30,7 +30,7 @@ This is my personal interactive resume designed to showcase my skills and projec
 If you want to run this project on your machine:
 1. Download the archive with the project
 2. Open the project in an editor that is convenient for you (I use Vs code)
-3. Important: 
-•	Create a .env.local file in the root directory and add your Resend API key to make the contact form work: RESEND_API_KEY=your_api_key_here
-4. Open a terminal and type npm run dev
-5. You will launch the project at http://localhost:3000/
+3. Important:
+- Create a .env.local file in the root directory and add your Resend API key to make the contact form work: RESEND_API_KEY=your_api_key_here
+5. Open a terminal and type npm run dev
+6. You will launch the project at http://localhost:3000/
