@@ -1,3 +1,5 @@
+Hi there 👋
+
 The repository supports projects ONLY on React/Next.js.
 
 🛠️ Tools and technologies:
