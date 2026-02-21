@@ -1,4 +1,4 @@
-### Live Demo: resume-pink-nine.vercel.app
+### Live Demo: [resume-pink-nine.vercel.app](https://next-tablecrm.vercel.app/)
 
 
 ## Features
