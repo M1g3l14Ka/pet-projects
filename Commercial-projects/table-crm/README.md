@@ -9,16 +9,16 @@
 - Styling: Tailwind CSS
 - Integrations: Gemini API
 
-## What I Learned
+## 🤓 What I Learned
 - Deepened my knowledge of Tailwind CSS with grid layouts.
 - Successfully integrated a gemini API. 
 - Improved overall Next.js project architecture and component isolation.
 
-## Future Improvements
+## 🤔 Future Improvements
 - Add smoother, highly complex animations.
 - Adding more micro-interactions for better user engagement.
 
-# How to Run Locally
+# 🛜 How to Run Locally
 If you want to run this project on your machine:
 1.	Download the archive with the project
 2.	Open the project in an editor that is convenient for you (I use Vs code)
