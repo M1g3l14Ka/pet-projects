@@ -1,6 +1,6 @@
 Hi there 👋
 
-🤔 This repository is a playground for learning and practice. It's packed with pet-projects that are as wild as your imagination.
+This repository is a playground for learning and practice. It's packed with pet-projects that are as wild as your imagination.
 
 🛠️ Tools and Tech:
 - React/Next.js, TypeScript, and Tailwinds CSS
