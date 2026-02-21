@@ -1,4 +1,4 @@
-### **Live Demo:** [resume-pink-nine.vercel.app](https://resume-pink-nine.vercel.app/)
+### **Live Demo:** https://michael-resume.vercel.app/
 
 ## Features
 This is my personal interactive resume designed to showcase my skills and projects. It features a cyberpunk-inspired UI and includes a fully functional **"Hire Me"** modal with real-time email routing, allowing recruiters to send job offers directly to my inbox.
