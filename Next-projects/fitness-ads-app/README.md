@@ -1,24 +1,32 @@
-# Fitness Tariff App 🏋️‍♂️
+### Live code: https://fitness-ads-app.vercel.app/
 
-Интерактивное веб-приложение для выбора тарифных планов фитнес-программ. Проект выполнен с упором на производительность, чистоту кода и Pixel Perfect верстку.
+## Features
+An interactive advertising web application for selecting fitness program pricing plans.
 
-## [🚀 Посмотреть Live Demo] (https://next-app-4a-test-ex.vercel.app/)
+### 🛠 Tools and Tech:
+- Next.js, TypeScript, Tailwind
+- Framet Motion
+- Git
 
-### 🛠 Технологический стек:
-- **Framework:** Next.js 15 (App Router)
-- **Language:** TypeScript (строгая типизация)
-- **Styling:** Tailwind CSS
-- **Deployment:** Vercel
+### ✨ Key Features:
+- **Server-Side Rendering (SSR):** Pricing data is uploaded to the server, which provides instant rendering and SEO optimization.
+- **Smart Timer:** Implemented a countdown (2 minutes) with saving state in `localStorage'. The timer does not reset when the page is refreshed.
+- **Dynamic UI:** Automatic switching of prices to "full" (without discounts) after the timer expires.
+- **Interactive UX:** Selection of the active tariff, validation of the checkbox upon purchase, custom animations on Tailwind.
+- **Responsive Design:** Full adaptability to any resolution (from 320px mobile to UltraWide monitors).
 
-### ✨ Ключевые особенности:
-- **Server-Side Rendering (SSR):** Данные о тарифах загружаются на сервере, что обеспечивает мгновенную отрисовку и SEO-оптимизацию.
-- **Smart Timer:** Реализован обратный отсчет (2 минуты) с сохранением состояния в `LocalStorage`. Таймер не сбрасывается при обновлении страницы.
-- **Dynamic UI:** Автоматическое переключение цен на "полные" (без скидок) по истечении времени таймера.
-- **Interactive UX:** Выбор активного тарифа, валидация чекбокса при покупке, кастомные анимации на Tailwind.
-- **Responsive Design:** Полная адаптивность под любые разрешения (от мобильных 320px до UltraWide мониторов).
+## 🤓 What I've learned
+- Start learning the Next.js, this is my first project on this core
+- Used Tailwind and Framer Motion for the first time
 
-## Архитектура
-Проект разделен на логические слои:
-- `page.tsx` - Серверный компонент для получения данных.
-- `PageWrapper` - Клиентская обертка для управления глобальным состоянием (таймер).
-- `components/` - Изолированные UI-компоненты.
+## 🧐 Future Improvements
+- Implementing even smoother, highly complex animations.
+- Adding more micro-interactions for better user engagement.
+- Make this site real app, not just a visual ads 
+
+## 🛜 How to Run Locally
+If you want to run this project on your machine:
+1.	Download the archive with the project
+2.	Open the project in an editor that is convenient for you (I use Vs code)
+3.	Open a terminal and type npm run dev
+4.	You will launch the project at http://localhost:3000/
