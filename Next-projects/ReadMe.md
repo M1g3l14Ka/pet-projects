@@ -1,6 +1,6 @@
 # Hi there 👋
 
-The repository supports projects ONLY on React/Next.js.
+This repository supports projects ONLY on React/Next.js.
 
 ## 🛠️ Tools and technologies:
 - React/Next.js, TypeScript, Tailwind
