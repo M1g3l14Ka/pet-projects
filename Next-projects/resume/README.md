@@ -1,5 +1,3 @@
-# Hi there 👋
-
 ### **Live Demo:** [resume-pink-nine.vercel.app](https://resume-pink-nine.vercel.app/)
 
 ## Features
