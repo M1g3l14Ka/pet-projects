@@ -2,7 +2,7 @@
 
 
 ## Features
-  This is my personal interactive resume designed to showcase my skills and projects. It features a cyberpunk-inspired UI and includes a fully functional "Hire Me" modal with real-time email routing, allowing recruiters to send job offers directly to my inbox.
+  A commercial product creation form built with Next.js 15 and Server Actions. Features secure API integration and a custom Gemini AI module that automatically generates SEO metadata based on user input
 
 ## 🛠 Tools & Tech Stack
 - Core: Next.js, TypeScript
