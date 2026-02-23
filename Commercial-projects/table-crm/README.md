@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Live Demo: https://next-tablecrm.vercel.app/
 
-## Getting Started
 
-First, run the development server:
+## Features
+  A commercial product creation form built with Next.js 15 and Server Actions. Features secure API integration and a custom Gemini AI module that automatically generates SEO metadata based on user input
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠 Tools & Tech Stack
+- Core: Next.js, TypeScript
+- Styling: Tailwind CSS
+- Integrations: Gemini API
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤓 What I Learned
+- Deepened my knowledge of Tailwind CSS with grid layouts.
+- Successfully integrated a gemini API. 
+- Improved overall Next.js project architecture and component isolation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤔 Future Improvements
+- Add smoother, highly complex animations.
+- Adding more micro-interactions for better user engagement.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 🛜 How to Run Locally
+If you want to run this project on your machine:
+1.	Download the archive with the project
+2.	Open the project in an editor that is convenient for you (I use Vs code)
+3.	Important:
+- Create a .env.local file in the root directory and add your Resend API key to make the contact form work: GEMINI_API_KEY=your_api_key_here
+5.	Open a terminal and type npm run dev
+6.	You will launch the project at http://localhost:3000/
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
