@@ -10,7 +10,10 @@
 - **Styling:** CSS3 (Flexbox, Responsive)
 
 ## 🤪 What I Learned
-- Just littel training on vanilla js on weekend, nothing special
+Just little training on vanilla js on weekend:
+- Training of  **DOM manipulation** and Event Listeners.
+- Implemented data persistence using browser **LocalStorage**.
+- Practice in game logic and mathematical progression algorithms.
 
 ## 🤔 Future Improvements
 - Implementing even smoother, highly complex animations.
