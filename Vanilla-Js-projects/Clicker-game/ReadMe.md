@@ -1,12 +1,13 @@
 ## Hi there 👋
-  Live Demo: resume-pink-nine.vercel.app
+  Play Live Demo: https://clicker-robot-game.vercel.app/
 
 ## Features
-  Little clicker game: Bash the bots! Smash those robots until their circuits fry. Farm some gold and pay off your debt - but make sure you take some time while you do it =)
+  A browser-based arcade game where you fight robots, earn coins, and upgrade your gear to pay off a massive debt. Built entirely with **Vanilla JavaScript** to demonstrate core DOM manipulation and state management concepts without external libraries.
 
 ## 🛠️ Tools & Tech Stack
-- Core: Next.js, TypeScript
-- Styling: Tailwind CSS
+- **Core:** Vanilla JavaScript (ES6+)
+- **Markup:** HTML5
+- **Styling:** CSS3 (Flexbox, Responsive)
 
 ## 🤪 What I Learned
 - Just littel training on vanilla js on weekend, nothing special
