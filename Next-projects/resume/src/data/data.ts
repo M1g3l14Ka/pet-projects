@@ -9,7 +9,7 @@ export const petTimelineData: ITimelineItem[] = [
     title: 'Fitness App',
     subtitle: 'Stack: Next, TypeScript, TailWind LocalStorage, Frame motion',
     description: 'A modern Single Page Application (SPA) for selecting fitness plans. Features server-side rendering for speed, a persistent smart timer, and a fully adaptive UI.',
-    code: 'https://github.com/M1g3l14Ka/pet-projects/tree/main/Next-projects/fitness-ads-app',
+    code: 'https://github.com/M1g3l14Ka/pet-projects/tree/main/Next-projects/fitness-ads',
     link: 'https://fitness-ads-app.vercel.app/',
     img:'/petImg/fitness-app.png',
     isInProgress: false,
