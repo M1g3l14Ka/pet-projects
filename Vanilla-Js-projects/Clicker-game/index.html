@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Битва с боссами</h1>
+            <div class="stats">
+                <h3>☠️ Убито: <span id="defeat_enemy_counter">0</span></h3>
+                <h3>💰 Монеты: <span id="money_counter">0</span></h3>
+                <h3>⚔️ Текущий урон: <span id="click_power">1</span></h3>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="enemy-card">
+                <h2 id="enemy_name">Робот-Крушитель</h2>
+                
+                <img 
+                    id="enemy_img" 
+                    src="https://api.dicebear.com/7.x/bottts/svg?seed=Foxy" 
+                    alt="Враг"
+                >
+                
+                <div class="hp-bar-container">
+                    <div id="enemy_hp">10 / 10 HP</div>
+                </div>
+                <div class="drop-info">Награда: <span id="enemy_money_drop">5</span> 💰</div>
+            </div>
+        </main>
+
+        <!-- МАГАЗИН -->
+        <div class="shop-section">
+            <h3>🛒 Магазин</h3>
+            <button id="buy-upgrade-btn">
+                Меч-кладенец (увеличить урон) <br>
+                Цена: <span id="upgrade-price">25</span> 💰
+            </button>
+        </div>
+
+        <footer class="footer">
+            <p>All rights reserved</p>
+        </footer>
+
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
