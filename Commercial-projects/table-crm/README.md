@@ -27,3 +27,6 @@ If you want to run this project on your machine:
 5.	Open a terminal and type npm run dev
 6.	You will launch the project at http://localhost:3000/
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](license) file for details.
