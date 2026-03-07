@@ -3,10 +3,10 @@
 import Link from "next/link"
 import Image from "next/image"
 import { IHeaderTitleBtns, IHeaderTiles, ILinkBtns} from "@/types"
-import { BorderTrail } from "../../../components/motion-primitives/border-trail"
+import { BorderTrail } from "@/components/motion-primitives/border-trail"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { useMemo, useState, useEffect } from "react"
-import HireForm from "./HireForm"
+import { useMemo, useState, useSyncExternalStore } from "react"
+import HireForm from "@/components/HireForm"
 
 interface HomePageProps {
     headerTitleBtns: IHeaderTitleBtns[];
@@ -15,12 +15,14 @@ interface HomePageProps {
 }
 
 export default function HomePage({ headerTitleBtns, headerTiles, hireBtns } : HomePageProps) {
-    const [mounted, setMounted] = useState(false);
     const [isHireOpen, setIsHireOpen] = useState(false)
 
-    useEffect(() => {
-        setMounted(true)
-    }, []);
+    // Use useSyncExternalStore to detect SSR vs client
+    const mounted = useSyncExternalStore(
+        () => () => {}, // No-op unsubscribe
+        () => true, // Get client value
+        () => false // Get server value
+    );
 
     const { scrollY } = useScroll();
     
@@ -33,17 +35,27 @@ export default function HomePage({ headerTitleBtns, headerTiles, hireBtns } : Ho
         })
     }, [headerTiles])
 
+    const containerVariants = {
+        hidden: { opacity: 0, y: -20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    }
+
+    const titleVariants = {
+        hidden: { opacity: 0, y: -30 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.7 } }
+    }
+
     return (
         <motion.div
-            initial={{opacity:0, y:-20}}
-            animate={{opacity:1, y:0}}
-            transition={{duration:0.5}}
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
             className="flex flex-col p-2 bg-[#050505] relative overflow-hidden min-h-screen"
         >
             <motion.div
-                initial={{opacity:0, y:-30}}
-                animate={{opacity:1, y:0}}
-                transition={{duration:0.7}}
+                variants={titleVariants}
+                initial="hidden"
+                animate="visible"
                 className="relative z-0"
             >
                 <div className="absolute inset-0 grid grid-cols-4 md:grid-cols-4 lg:grid-cols-12 rotate-[-15deg] scale-125 p-0 m-0 opacity-30 pointer-events-none w-[120vw] ">
@@ -64,6 +76,7 @@ export default function HomePage({ headerTitleBtns, headerTiles, hireBtns } : Ho
                                                 height={60}
                                                 alt={tile.alt}
                                                 src={tile.src}
+                                                sizes="60px"
                                                 className="brightness-75 blur-[1px]"
                                             />
                                         </div>
@@ -85,7 +98,8 @@ export default function HomePage({ headerTitleBtns, headerTiles, hireBtns } : Ho
                         </Link> 
                     </div>
 
-                    <button 
+                    <button
+                        type="button"
                         className="font-mono font-bold text-lg md:text-2xl underline rounded-2xl px-4 py-1 md:w-32 hover:bg-linear-120 from-orange-400 to-rose-600/80 hover:scale-110 hover:border-none transition-all"
                         onClick={() => setIsHireOpen(true)}
                     >
@@ -110,8 +124,9 @@ export default function HomePage({ headerTitleBtns, headerTiles, hireBtns } : Ho
                         <div className='relative w-48 h-48 md:w-64 md:h-64 rounded-[50%]'>
                             <Image
                                 fill
-                                alt=''
+                                alt="Michael K. profile photo"
                                 src='/profImg.png'
+                                sizes="(max-width: 768px) 192px, 256px"
                                 className="rounded-[50%] object-cover"
                             />
                             <BorderTrail

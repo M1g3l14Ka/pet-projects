@@ -4,6 +4,11 @@ import { Resend } from "resend"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
+const RECIPIENT_EMAIL = process.env.RECIPIENT_EMAIL || 'katcionma@gmail.com'
+const FROM_EMAIL = process.env.FROM_EMAIL || 'Portfolio Contact <onboarding@resend.dev>'
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
 export const sendEmail = async (FormData: FormData) => {
     const name = FormData.get('name') as string;
     const company = FormData.get('company') as string;
@@ -15,17 +20,21 @@ export const sendEmail = async (FormData: FormData) => {
         return { error: "Email and Message are required!" }
     }
 
+    if (!emailRegex.test(email)) {
+        return { error: "Invalid email format!" }
+    }
+
     try {
         const data = await resend.emails.send({
-            from: 'Portfolio Contact <onboarding@resend.dev>',
-            to: 'katcionma@gmail.com',
+            from: FROM_EMAIL,
+            to: RECIPIENT_EMAIL,
             replyTo: email,
-            subject:`New job Offer! ${subject}`,
-            text:`Name: ${name}\nCompany: ${company}\nEmail: ${email}\n\nMessage: ${message}`,
+            subject: `New job Offer! ${subject}`,
+            text: `Name: ${name}\nCompany: ${company}\nEmail: ${email}\n\nMessage: ${message}`,
         });
 
-        return { succes: true, data }
-    } catch (error) {
+        return { success: true, data }
+    } catch {
         return { error: 'Something went wrong :(' }
     }
 

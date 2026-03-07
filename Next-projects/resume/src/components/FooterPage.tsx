@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 
 export default function FooterPage() {
+    const currentYear = new Date().getFullYear();
+    
     return (
-        <motion.div 
+        <motion.div
             initial={{opacity:0, y:-30}}
             animate={{opacity:1, y:0}}
             transition={{duration:1}}
@@ -14,7 +16,7 @@ export default function FooterPage() {
                 <h1
                     className="text-lg font-mono text-transparent bg-clip-text bg-linear-to-r from-orange-400 to-rose-600/80"
                 >
-                    © 2026 Kasion M.A. All materials on this website are the property of the Kasion M.A. All rights reserved.
+                    © {currentYear} Kasion M.A. All materials on this website are the property of the Kasion M.A. All rights reserved.
                 </h1>
             </div>
         </motion.div>

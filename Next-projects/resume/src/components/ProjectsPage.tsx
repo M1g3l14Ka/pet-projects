@@ -4,12 +4,11 @@ import { motion } from "framer-motion"
 import { ITimelineItem } from "@/types";
 import Image from "next/image";
 
-
-interface ProjectpageProps {
+interface ProjectsPageProps {
     petTimelineData: ITimelineItem[];
 }
 
-export default function ProjectsPage({ petTimelineData }:ProjectpageProps) {
+export default function ProjectsPage({ petTimelineData }: ProjectsPageProps) {
 
     return (
         <div>
@@ -61,8 +60,9 @@ export default function ProjectsPage({ petTimelineData }:ProjectpageProps) {
                                             <Image
                                                 fill
                                                 src={item.img}
-                                                alt="" 
-                                                className="object-cover group-hover:scale-105 transition-all duration-700 "    
+                                                alt={`${item.title} project screenshot`}
+                                                sizes="(max-width: 768px) 100vw, 45vw"
+                                                className="object-cover group-hover:scale-105 transition-all duration-700 "
                                             />
                                         </div>
                                         <h1 className="m-2">{item.subtitle}</h1>

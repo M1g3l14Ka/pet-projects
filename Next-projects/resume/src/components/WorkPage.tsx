@@ -5,10 +5,10 @@ import { ITimelineItem } from "@/types"
 
 
 interface IWorkPage {
-    workTimeLineData: ITimelineItem[];
+    workTimelineData: ITimelineItem[];
 }
 
-export default function WorkPage({ workTimeLineData }:IWorkPage) {
+export default function WorkPage({ workTimelineData }: IWorkPage) {
 
     return (
         <div className="">
@@ -19,7 +19,7 @@ export default function WorkPage({ workTimeLineData }:IWorkPage) {
                 <div className="relative flex flex-col m-4 gap-12 py-10">
                     <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-linear-to-b from-orange-500 to-rose-600 -translate-x-1/2 hidden md:block opacity-30" />
 
-                    {workTimeLineData.map((item, index) => (
+                    {workTimelineData.map((item, index) => (
                         <motion.div 
                             key={item.id}
                             initial={{ opacity:0, y:50 }}

@@ -29,7 +29,7 @@ export default function AboutModal({ onClose }: { onClose: () => void }) {
                 {/* ЛЕВАЯ ЧАСТЬ: ФОТО */}
                 <div className="w-full md:w-1/3 bg-white/5 p-6 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-white/10">
                     <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.5)] mb-4">
-                        <Image src="/profImg.png" fill alt="Me" className="object-cover" />
+                        <Image src="/profImg.png" fill alt="Michael profile photo" sizes="(max-width: 768px) 128px, 160px" className="object-cover" />
                     </div>
                     <h2 className="text-xl font-bold text-white font-mono">Michael</h2>
                     <p className="text-purple-400 text-sm font-mono">Frontend Dev</p>

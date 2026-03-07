@@ -5,7 +5,7 @@ export const petTimelineData: ITimelineItem[] = [
   {
     id: 1,
     category: 'Pet',
-    date: 'Jan 2026',
+    date: 'Jan 2025',
     title: 'Fitness App',
     subtitle: 'Stack: Next, TypeScript, TailWind LocalStorage, Frame motion',
     description: 'A modern Single Page Application (SPA) for selecting fitness plans. Features server-side rendering for speed, a persistent smart timer, and a fully adaptive UI.',
@@ -29,7 +29,7 @@ export const petTimelineData: ITimelineItem[] = [
   {
     id: 3,
     category: 'Pet',
-    date: 'Feb 2026',
+    date: 'Feb 2025',
     title: 'Clicker Game',
     subtitle: 'Stack: Js(ES6), HTML5/CSS3, LocalStorage',
     description: 'Little clicker game: Bash the bots! Smash those robots until their circuits fry. Farm some gold and pay off your debt - but make sure you take some time while you do it =)',
@@ -41,7 +41,7 @@ export const petTimelineData: ITimelineItem[] = [
   {
     id: 4,
     category: 'Pet',
-    date: 'Jan 2026',
+    date: 'Jan 2025',
     title: 'The Nexus Portal',
     subtitle: 'Stack: Next, TailWind, Framer Motion',
     description: 'Creative portal with complex animations, glassmorphism UI and interactive background tiles.',
@@ -52,7 +52,7 @@ export const petTimelineData: ITimelineItem[] = [
   },
 ];
 
-export const workTimeLineData: ITimelineItem[] = [
+export const workTimelineData: ITimelineItem[] = [
   {
     id: 1,
     category: 'Work',
@@ -61,7 +61,7 @@ export const workTimeLineData: ITimelineItem[] = [
     subtitle: 'Analytics and monitoring',
     description: 'Analytics and monitoring of company resources, reporting on the work done, working with databases.',
     img:'/'
-  },  
+  },
   {
     id: 2,
     category: 'Work',
@@ -73,7 +73,7 @@ export const workTimeLineData: ITimelineItem[] = [
   },
 ];
 
-export const aboutTimeLineData: ITimelineItem[] = [
+export const aboutTimelineData: ITimelineItem[] = [
     {
     id: 1,
     category: 'About Me',
@@ -97,14 +97,14 @@ export const headerTiles = [
   { id: 1, src: '/tilesImg/html.png', alt: 'HTML' },
   { id: 2, src: '/tilesImg/css.png', alt: 'CSS' },
   { id: 3, src: '/tilesImg/js.png', alt: 'JavaScript' },
-  { id: 4, src: '/tilesImg/typeScript.png', alt: 'TypeScript' }, 
+  { id: 4, src: '/tilesImg/typeScript.png', alt: 'TypeScript' },
   { id: 5, src: '/tilesImg/react.png', alt: 'React' },
   { id: 6, src: '/tilesImg/next.png', alt: 'Next.js' },
   { id: 7, src: '/tilesImg/tailwind.png', alt: 'Tailwind' },
   { id: 8, src: '/tilesImg/gitHub.png', alt: 'GitHub' },
   { id: 9, src: '/tilesImg/docker.png', alt: 'Docker' },
   { id: 10, src: '/tilesImg/node.png', alt: 'Node.js' },
-  { id: 11, src: '/tilesImg/vuejs.png', alt: 'Vue.js' }, 
+  { id: 11, src: '/tilesImg/vuejs.png', alt: 'Vue.js' },
 ];
 
 
