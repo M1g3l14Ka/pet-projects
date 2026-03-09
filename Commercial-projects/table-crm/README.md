@@ -6,7 +6,7 @@
 
 ## 🛠 Tools & Tech Stack
 - Core: Next.js, TypeScript
-- Styling: Tailwind CSS
+- Styling: Tailwind CSS, shadcn/ui
 - Integrations: Gemini API
 
 ## 🤓 What I Learned
